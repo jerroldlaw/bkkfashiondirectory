@@ -35,6 +35,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    this.getFashionDirectory()
     setInterval(() => {
       this.getFashionDirectory()
     }, 60000)
