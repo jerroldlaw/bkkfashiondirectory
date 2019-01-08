@@ -35,7 +35,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getFashionDirectory(this.state.realm)
+    setInterval(() => {
+      this.getFashionDirectory()
+    }, 60000)
   }
 
   onFilteredChange(filtered) {
